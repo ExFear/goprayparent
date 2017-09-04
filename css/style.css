@@ -76,7 +76,7 @@ ul{
 
 /* Button Green */
 .btn-green{
-    background: transparent;
+    background: #42c27b;
     border-radius: 25px;
     color: #fff;
     font-family: "Avenir Medium", Fallback, sans-serif;
@@ -85,13 +85,16 @@ ul{
     font-stretch: normal;
     font-weight: 500;
     text-align: center;
-    border: 2px solid #ffffff;
 	width:120px;
+    transition: all 0.4s;
 }
 .btn-green:focus,
 .btn-green:hover{
     color: #fff;
+    opacity: 0.5;
+    border-color: #42c27b;
     outline: none;
+    
 }
 .btn-green:focus,
 .btn-green:active:focus,
@@ -388,24 +391,21 @@ ul{
     height: 60px;
 }
 .navbar-front .navbar-nav > li > a{
-    color: #20c17b;
+    color: #000;
     font-family: "Avenir Medium", Fallback, sans-serif;
     font-size: 26.0px;
     font-style: normal;
     font-stretch: normal;
     font-weight: 500;
+    text-align: center;
 }
 .navbar-front .navbar-nav > li > a:hover,
 .navbar-front .navbar-nav > li > a:focus{
-    color: #20c17b;
+    color: #20c27b;
 }
 
 
 /* --- Sign In --- */
-.bg{
-	background: url('https://gopray.id/wp-content/uploads/2016/12/Azkiya-Wisuda-e1490972624667.jpg');
-    background-image: url('https://gopray.id/wp-content/uploads/2016/12/Azkiya-Wisuda-e1490972624667.jpg');
-	background-size:cover;
 }
 .content-front{
     padding-top: 0;
@@ -434,7 +434,7 @@ ul{
     font-style: normal;
     font-stretch: normal;
     font-weight: 500;
-    color: #ffffff;
+    color: #20c27b;
     border-radius: 0;
     padding: 0;
 }
@@ -443,14 +443,14 @@ ul{
     text-decoration: none;
 }
 .front-tabs > li.active{
-    padding-left: 40px;
+    padding-left: 0px;
     padding-right: 0;
 }
 .front-tabs > li.active > a,
 .front-tabs > li.active > a:hover,
 .front-tabs > li.active > a:focus{
     margin-bottom: -1px;
-    color: #ffffff;
+    color: #20c27b ;
     font-family: "Avenir Medium", Fallback, sans-serif;
     background-color: transparent;
     padding-bottom: 5px;
@@ -462,7 +462,7 @@ ul{
     margin-bottom: 20px;
 }
 .front-form label{
-    color: #fff;
+    color: #000;
     font-family: "Avenir Roman", Fallback, sans-serif;
     font-size: 18.0px;
     font-style: normal;
@@ -481,7 +481,7 @@ ul{
 	margin-right:660px;
 }
 .front-form .form-link{
-    color: #ffffff;
+    color: #20c27b;
     font-family: "Avenir Heavy", Fallback, sans-serif;
     font-size: 18.0px;
     font-style: normal;
@@ -489,8 +489,8 @@ ul{
     font-weight: 400;
 }
 .hero-text h2{
-	color: #fff;
-    font-size: 40px;
+	color: #20c27b;
+    font-size: 42px;
     font-weight: 400;
     letter-spacing: 0;
     line-height: 64px;
@@ -499,7 +499,7 @@ ul{
 }
 .hero-text p{
 	margin:0;
-	color: #fff;
+	color: #000;
 }
 
 
@@ -1743,7 +1743,9 @@ ul{
         margin-bottom: 40px;
     }
     
-    
+    .vc_column_feature{
+        padding-top: 0;
+    }
     /* 
     --- 
     Admin
@@ -2152,7 +2154,9 @@ ul{
         left: auto;
         right: 0;
     }
-        
+    .img-size{
+        height: auto;
+    }   
     /* - Sidebar - */
     .media-timeline .media-left{
         display: block;
@@ -2213,7 +2217,6 @@ ul{
     }
     
 }
-
 @media screen and (max-width: 419px){
     .summary-content .user-menu{
         display: block;
@@ -2264,33 +2267,37 @@ element.style {
     animation-name: bounceIn;
 }
 .home_btn a {
-    background: transparent none repeat scroll 0 0;
-    border: 2px solid #000000;
+    background: #42c27b none repeat scroll 0 0;
     border-radius: 50px;
-    color: #000000;
+    color: #fff;
     display: inline-block;
     padding: 10px 30px;
     margin: 15px 10px 15px;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.home_btn a:hover {
+    border-color: #42c27b;
+    opacity: 0.5;
 }
 a {
     text-decoration: none;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-	padding:10px;
+    padding: 5px;
 }
 /* TEKS */
-.single_about p {
-    overflow: hidden;
-}
 p {
     margin-bottom: 0;
+    line-height: 30px;
 }
 .vc_column_container {
     padding-left: 0;
+	padding-top:100px;
+}
+.vc_column_icon{
     padding-right: 0;
-	padding-top:20px;
-	padding-bottom:50px;
+    padding-left: 0;
 }
 .vc_column_inner{
 	box-sizing: border-box;
@@ -2312,12 +2319,15 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     color: #ff5f83;
     float: left;
-    height: 45px;
+    height: 40px;
     line-height: 45px;
-    margin-right: 15px;
+    margin-right: 20px;
     text-align: center;
-    width: 45px;
+    width: 40px;
     transition: all 0.3s ease 0s;
+}
+.single_about i: hover{
+    background: #ff5f83;
 }
 /*PAGE-ABOUT*/
 .profile-photo{
@@ -2349,12 +2359,14 @@ p {
 	text-align: center;
 }
 .text h1{
-	font-size: 36px;
+	font-size: 34px;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: uppercase;
 	text-align: left;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
+    color: #20c27b;
+    color: #20c27b;
 }
 .max-text{
 	margin-bottom:50px;
@@ -2372,7 +2384,7 @@ p {
 }
 /*DOWNLOAD*/
 .download{
-    background: #ff5f83 none repeat scroll 0 0;
+    background: #42c27b none repeat scroll 0 0;
 }
 .download_icon h2 {
     color: #fff;
@@ -2400,7 +2412,7 @@ p {
     font-size: 16px;
     height: 50px;
     padding: 10px;
-    width: 92%;
+    width: 78%;
 }
 .info{
 	font-size: 11px;
@@ -2425,8 +2437,80 @@ p {
 }
 /*STYLE*/
 .now-praying {
-	margin-left:50px;
+	margin-left:10px;
+    padding-top: 30px;
 }
 .tabel{
 	text-align:center;
+}
+.img-header{
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+}
+.img-size{
+    width: auto;
+    height: 650px;
+    padding-top: 75px;
+}
+@media screen and (max-width: 479px){
+    .img-size{
+        height: auto;
+    }
+}
+.send{
+    width:36%;
+    margin: auto;
+}
+.feature{
+    padding right: 25px;
+    padding-left: 25px;
+}
+
+.btn-green > a:hover{
+    color: white;
+}
+.your-message textarea,
+.your-message input[type=text],
+.your-message input[type=email]{
+    margin: 0px; 
+    width: 323px; 
+    height: auto;
+}
+@media screen and (max-width: 479px){
+    .your-message textarea,
+    .your-message input[type=text],
+    .your-message input[type=email]{
+        width: 100%;
+        height: auto;
+    }
+} 
+#contact .section-title{
+    margin-bottom: 20px;
+}
+.feature h4{
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 479px){
+    .feature, 
+    .media-left{
+        display: block !important;
+        margin-bottom: 20px !important;
+        height: 30px !importnat;
+    }
+    .feature,
+    .media-body{
+        display: block !important;
+        width: 100% !important;
+    }
+    .feature,
+    .media-heading{
+        margin-bottom: 0 !important;
+        margin-top: 20px !important;
+    }
+}
+@media screen and (max-width: 479px){
+    .feature{
+        text-align: center;
+    }
 }
